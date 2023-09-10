@@ -3,8 +3,8 @@ import BasicTable from "./content/BasicTable";
 
 function Main() {
   return (
-    <>
-      <h3>리스트</h3>
+    <div className="wrap">
+      <h3>💻 테이블 만들기</h3>
       {/* <ul>
         <Link to="/content/1">
           <li>1번</li>
@@ -15,7 +15,7 @@ function Main() {
         
       </ul> */}
       <BasicTable />
-    </>
+    </div>
   );
 }
 

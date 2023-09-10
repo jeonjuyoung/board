@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;600;700;900&display=swap');
 
-*{margin:0;padding:0;font-family:'Noto Sans KR', 'roboto';}
+*{margin:0;padding:0;font-family:'Noto Sans KR', 'roboto' !important;}
 
 a, p, h1, h2, h3, h4, h5 {text-decoration:none;color:#111;}
 
@@ -11,4 +11,25 @@ header {
   div {display:flex;align-items:center;padding:0 2rem;height:100%;}
   a {font-weight:600;font-size:0.85rem;}
 }
-footer {width:100%;background-color:#eee;font-size:0.8rem;font-weight:600;padding:0.5rem 0;text-align:center;margin-top:1rem;}
+.wrap {
+  max-width:1000px;margin:0 auto;width:100%;
+  h3{margin-top:2rem;}
+}
+.board-table {
+  width:calc(100% - 20px) !important;
+  margin:2rem auto 3rem;
+  border-color:#eee !important;
+  box-shadow:0 2px 2px #00000021 !important;
+
+  table {min-width:fit-content !important;}
+  thead {background: #e2ebed;}
+  tbody {
+    tr {transition:all 0.3s;}
+    tr:hover {box-shadow:0 2px 2px #00000023 !important;background-color:#f2f8f9;}
+  }
+  th,td {font-size:0.8rem;padding: 0.7rem 1rem;border-color:#f7f7f7 !important;}
+  th {font-weight:600;}
+  td {font-weight:400;}
+}
+
+footer {width:100%;background-color:#f7f7f7;font-size:0.8rem;font-weight:600;padding:0.5rem 0;text-align:center;margin-top:1rem;}
